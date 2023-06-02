@@ -1,0 +1,296 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+  color: #d00000; 
+}
+
+.left-section,
+.right-section {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo { 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.left-section a:hover,
+.right-section a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+  color: #d00000; 
+}
+
+.lookbook, .about {
+  margin-left: 75px;
+}
+
+.account, .cart {
+  margin-right: 75px;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+
+.t-shirt-section {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.t-shirt {
+  position: relative;
+  padding: 20px; 
+  padding-top: 40px;
+}
+
+.t-shirt-image {
+  position: relative;
+}
+
+.t-shirt-image img {
+  width: 100%;
+  height: auto;
+}
+
+.t-shirt-details {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  opacity: 0;
+}
+
+
+.t-shirt:hover .t-shirt-details {
+  opacity: 1;
+  z-index: 1;
+}
+
+.t-shirt-title,
+.t-shirt-price {
+  margin: 0;
+}
+
+.description { 
+  letter-spacing: 1px;
+  font-size: 11px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-top: 140px; 
+  font-family: 'Helvetica2', sans-serif;
+  padding-bottom: 65px;
+
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px; 
+}
+
+.image-stack img {
+  width: 100%;
+}
+
+
+footer.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+footer.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer.footer a.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+  color: #d00000; 
+}
+
+footer .left-section,
+footer .right-section {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+footer .left-section a:hover,
+footer .right-section a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+  color: #d00000; 
+}
+
+footer .TOS,
+footer .TAC {
+  margin-left: 75px;
+}
+
+footer .SAR,
+footer .contact {
+  margin-right: 75px;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.overlay-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.overlay-link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+}
+
+
+.container {
+  margin-top: 130px;
+  margin-left: 500px;
+  margin-right: 450px;
+}
+
+.container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.container input[type="text"],
+.container textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.container input[type="submit"] {
+  width: auto;
+  color: black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-left: 10px; /* Move the submit button slightly to the right */
+}
+
+.container input[type="text"]::placeholder,
+.container textarea::placeholder {
+  font-family: "Helvetica2", sans-serif;
+}
+
+.container input[type="text"],
+.container textarea,
+.container input[type="submit"] {
+  font-family: "Helvetica", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.container textarea {
+  resize: none;
+  overflow-x: hidden;
+  white-space: pre-wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+  

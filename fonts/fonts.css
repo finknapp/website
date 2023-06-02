@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('c891e94039740e4a24a9f53324fd91be.woff') format('woff');
+    /* Additional font properties can be specified here, such as font-weight and font-style */
+  }
+  
+  @font-face {
+    font-family: 'Helvetica2';
+    src: url('02d8bfeaeb805e69f0b04e0f78697ec3.woff') format('woff');
+  }
